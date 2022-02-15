@@ -1,0 +1,7 @@
+{
+  "name": "forward-assist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
