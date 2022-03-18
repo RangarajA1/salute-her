@@ -25,3 +25,23 @@
 #container a {
   text-decoration: none;
 }
+div.imagebackground{
+  text-align:center;height: 100%;
+  background-image: url(../../assets/images/HomeTitle_alt.jpg);width: 100%; background-repeat: no-repeat, no-repeat;background-position: center;
+}
+
+@media (min-aspect-ratio: 40/100) {
+  div.imagebackground.responsive {
+    background-size: 100%, 100%, auto;
+  }
+}
+@media  (min-aspect-ratio: 5/3){
+  div.imagebackground.responsive {
+    background-size: 50%, 50%, auto;
+  }
+}
+@media  (min-aspect-ratio: 140/100){
+  div.imagebackground.responsive {
+    background-size: 30%, 30%, auto;
+  }
+}
