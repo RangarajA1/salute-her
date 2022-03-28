@@ -1,115 +1,178 @@
-
-
-<ion-content [fullscreen]="true" style="--background:grey;">
-  <div id="container" style="background: gray;height: 100%;">
-    <ion-card style="text-align:center;height: 20%;">
-      <div class="imagebackground responsive">
-      </div>
+<ion-content [fullscreen]="true" style="--background: grey">
+  <div id="container" style="background: gray; height: 100%">
+    <ion-card style="text-align: center; height: 20%">
+      <div class="imagebackground responsive"></div>
     </ion-card>
-   
+
     <ion-card>
       <ion-accordion-group>
-        <ion-accordion value="Introduction" style="height: 20%;" >
+        <ion-accordion value="Introduction" style="height: 20%">
           <ion-item slot="header">
-            <ion-label text-wrap style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
+            <ion-label
+              text-wrap
+              style="
+                font-weight: bold;
+                font-size: large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: goldenrod;
+              "
+            >
               WELCOME TO FORWARD ASSIST
             </ion-label>
           </ion-item>
-            
+
           <ion-card slot="content" style="text-align: left">
-            <ion-card-content >
-             <h4>OUR MISSION :</h4>
-               <p>
-                “We support military veterans struggling to adjust to civilian life; 
-                we want  all veterans to  live  great lives, filled with passion, purpose, service, connection and growth”. 
-                For some veterans a return to civilian life can be a joyous experience, 
-                However for others it can be an experience fraught with transitional difficulties that are multiple and complex in nature. 
-                We aim to provide a safe place where traumatised veterans can feel physically and psychologically supported, respected and welcome.
+            <ion-card-content>
+              <h4>OUR MISSION :</h4>
+              <p>
+                “We support military veterans struggling to adjust to civilian
+                life; we want all veterans to live great lives, filled with
+                passion, purpose, service, connection and growth”. For some
+                veterans a return to civilian life can be a joyous experience,
+                However for others it can be an experience fraught with
+                transitional difficulties that are multiple and complex in
+                nature. We aim to provide a safe place where traumatised
+                veterans can feel physically and psychologically supported,
+                respected and welcome.
               </p>
 
-            <ion-button fill="clear"  (click)="initModal()">read more...</ion-button>
+              <ion-button fill="clear" (click)="initModal()"
+                >read more...</ion-button
+              >
 
-            <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
-
+              <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
             </ion-card-content>
           </ion-card>
         </ion-accordion>
-    
-          <ion-accordion value="Who are We" style="height: 20%;">
-            <ion-item slot="header">
-              <ion-label text-wrap style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
-                Who Are We
-              </ion-label>
-            </ion-item>
-              
-            <ion-card slot="content" style="text-align: left;">
-              <ion-card-content >
-                <h4>OUR VISSION :</h4>
-                 <p>
-                  We believe that military veterans are the civilian communities greatest asset. 
-                  Our life enhancing, totally inclusive, research, education, advocacy and support projects promote inclusion and facilitate the learning of new skills.
-                  We actively promote and deliver activities that enhance mental and physical wellbeing. 
-                  Our best in class  ‘trauma informed’ interventions improve the quality of life of all those referred to our service and rekindle citizenship
-                </p>
-              </ion-card-content>
-            </ion-card>
-          </ion-accordion>
 
-            <ion-accordion value="Research" style="height: 20%;">
-              <ion-item slot="header">
-                
-                <ion-label text-wrap style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
-                  Research Data
-                </ion-label>
-              </ion-item>
-                
-              <ion-card slot="content" style="text-align: left;">
-                <ion-card-content >
-                   <h4>RESEARCH</h4>
-                   <p>
-                    Forward Assist are always looking to develop the services we offer to Veterans to ensure that they can successfully transition back into civilian life.
-                    Below are examples of past project and more can be found in our website archive.
-                  </p>
-                  <h4>WOMEN VETERANS: WASHINGTON DC RESEARCH TRIP 2017</h4>
-                  <p>Representatives of Forward Assist Female Veterans Group were invited to Washington DC in February 2017.
-                     Here is the report detailing the findings from their meetings and research..</p>
+        <ion-accordion value="Who are We" style="height: 20%">
+          <ion-item slot="header">
+            <ion-label
+              text-wrap
+              style="
+                font-weight: bold;
+                font-size: large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: goldenrod;
+              "
+            >
+              Who Are We
+            </ion-label>
+          </ion-item>
 
-                     <h4>HELP FOR ZEROS</h4>
-                     <p>According to the MOD, ‘The Armed Forces Covenant sets out the relationship between the Nation, the State and the Armed Forces. 
-                       It recognises that the whole nation has a moral obligation to members of the Armed Forces and their families, and it establishes how they should expect to be treated</p>
-                <h4>THE WINSTON CHURCHILL MEMORIAL TRUST</h4>
-                <p>Veterans are notoriously bad at asking for help and may view survival ‘on the streets’,
-                   or when experiencing acute adversity, as a continuation of the field exercises or combat missions they took part in whilst on active service.</p>
-                   <h4>HORS DE COMBAT</h4>
-                   <p>There is a lack of social justice and equality for former service personnel involved with the Criminal Justice System.</p>
-              </ion-card-content>
-              </ion-card>
-            </ion-accordion>
-
-            <ion-accordion value="What Do We Do" style="height: 20%;">
-              <ion-item slot="header">
-                
-                <ion-label text-wrap style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
-                  What Do We Do
-                </ion-label>
-              </ion-item>
-                
-              <ion-card slot="content" style="text-align: left;">
-                <ion-card-content >
-                   <h4>RESEARCH - EDUCATION - ADVOCACY- SUPPORT</h4>
-                   <p>
-                    For the last seven years Forward Assist has been busy developing an innovative  ‘Theory of Change for Veterans’. 
-                     All Forward Assists projects and interventions are based upon the core Social Work values of service; 
-                     social justice, dignity, self determination, the importance of human relationships, integrity, and competence. 
-                      When necessary we will care coordinate services and our in-house ‘needs led’ and ‘person centred’ 
-                      care plans enable both veterans and their families to access none judgemental help and support. 
-                    Our veteran ‘community navigators’, based in Salute Cafe will help you identify your needs and goals and facilitate referrals to community based support services if appropriate.
-                  </p>
-                </ion-card-content>
-              </ion-card>
-            </ion-accordion>
-
-            </ion-accordion-group>
+          <ion-card slot="content" style="text-align: left">
+            <ion-card-content>
+              <h4>OUR VISSION :</h4>
+              <p>
+                We believe that military veterans are the civilian communities
+                greatest asset. Our life enhancing, totally inclusive, research,
+                education, advocacy and support projects promote inclusion and
+                facilitate the learning of new skills. We actively promote and
+                deliver activities that enhance mental and physical wellbeing.
+                Our best in class ‘trauma informed’ interventions improve the
+                quality of life of all those referred to our service and
+                rekindle citizenship
+              </p>
+            </ion-card-content>
           </ion-card>
-    </div>
+        </ion-accordion>
+
+        <ion-accordion value="Research" style="height: 20%">
+          <ion-item slot="header">
+            <ion-label
+              text-wrap
+              style="
+                font-weight: bold;
+                font-size: large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: goldenrod;
+              "
+            >
+              Research Data
+            </ion-label>
+          </ion-item>
+
+          <ion-card slot="content" style="text-align: left">
+            <ion-card-content>
+              <h4>RESEARCH</h4>
+              <p>
+                Forward Assist are always looking to develop the services we
+                offer to Veterans to ensure that they can successfully
+                transition back into civilian life. Below are examples of past
+                project and more can be found in our website archive.
+              </p>
+              <h4>WOMEN VETERANS: WASHINGTON DC RESEARCH TRIP 2017</h4>
+              <p>
+                Representatives of Forward Assist Female Veterans Group were
+                invited to Washington DC in February 2017. Here is the report
+                detailing the findings from their meetings and research..
+              </p>
+
+              <h4>HELP FOR ZEROS</h4>
+              <p>
+                According to the MOD, ‘The Armed Forces Covenant sets out the
+                relationship between the Nation, the State and the Armed Forces.
+                It recognises that the whole nation has a moral obligation to
+                members of the Armed Forces and their families, and it
+                establishes how they should expect to be treated
+              </p>
+              <h4>THE WINSTON CHURCHILL MEMORIAL TRUST</h4>
+              <p>
+                Veterans are notoriously bad at asking for help and may view
+                survival ‘on the streets’, or when experiencing acute adversity,
+                as a continuation of the field exercises or combat missions they
+                took part in whilst on active service.
+              </p>
+              <h4>HORS DE COMBAT</h4>
+              <p>
+                There is a lack of social justice and equality for former
+                service personnel involved with the Criminal Justice System.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-accordion>
+
+        <ion-accordion value="What Do We Do" style="height: 20%">
+          <ion-item slot="header">
+            <ion-label
+              text-wrap
+              style="
+                font-weight: bold;
+                font-size: large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: goldenrod;
+              "
+            >
+              What Do We Do
+            </ion-label>
+          </ion-item>
+
+          <ion-card slot="content" style="text-align: left">
+            <ion-card-content>
+              <h4>RESEARCH - EDUCATION - ADVOCACY- SUPPORT</h4>
+              <p>
+                For the last seven years Forward Assist has been busy developing
+                an innovative ‘Theory of Change for Veterans’. All Forward
+                Assists projects and interventions are based upon the core
+                Social Work values of service; social justice, dignity, self
+                determination, the importance of human relationships, integrity,
+                and competence. When necessary we will care coordinate services
+                and our in-house ‘needs led’ and ‘person centred’ care plans
+                enable both veterans and their families to access none
+                judgemental help and support. Our veteran ‘community
+                navigators’, based in Salute Cafe will help you identify your
+                needs and goals and facilitate referrals to community based
+                support services if appropriate.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-accordion>
+      </ion-accordion-group>
+      <a
+        href="mailto:?subject=Forward%20Assist%20Referral&body=This%20is%20placeholder%20text%20to%20refer%20a%20friend%20to%20Forward%20Assist"
+      >
+        <ion-button color="dark" expand="block">Refer a friend</ion-button>
+      </a>
+    </ion-card>
+  </div>
 </ion-content>
