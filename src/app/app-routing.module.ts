@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'popover',
     loadChildren: () => import('./popover/popover.module').then( m => m.PopoverPageModule)
   },
+  {
+    path: 'instructions',
+    loadChildren: () => import('./instructions/instructions.module').then( m => m.InstructionsPageModule)
+  },
+  {
+    path: 'introduction',
+    loadChildren: () => import('./introduction/introduction.module').then( m => m.IntroductionPageModule)
+  },
 ];
 
 @NgModule({

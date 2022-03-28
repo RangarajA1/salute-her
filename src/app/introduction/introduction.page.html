@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Introduction</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div style="margin:10%">
+     <h4>WELCOME TO FORWARD ASSIST</h4>
+       <p>
+        “We support military veterans struggling to adjust to civilian life; 
+        we want  all veterans to  live  great lives, filled with passion, purpose, service, connection and growth”. 
+        For some veterans a return to civilian life can be a joyous experience, 
+        However for others it can be an experience fraught with transitional difficulties that are multiple and complex in nature. 
+        We aim to provide a safe place where traumatised veterans can feel physically and psychologically supported, respected and welcome.
+      </p>
+
+    <ion-button fill="clear"  (click)="initModal()">read more...</ion-button>
+
+    <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
+  </div>
+</ion-content>
