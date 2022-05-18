@@ -1,53 +1,118 @@
-<ion-content [fullscreen]="true" style="--background:grey;height: 90%;">
-  <div id="container" style="background: gray;height: 100%;">
-    <ion-card style="text-align:center;height: 22%;">
-      <div class="imagebackground responsive">
-      </div>
-    </ion-card>
-
-    <ion-card style="height:14%">
-      <ion-button fill="clear" style="width:100%;height:100%" routerLink="/introduction" routerDirection="root">
-        <img src="..//../assets/images/Forward_assit_logo.jpg" style="height:80%">
-        <ion-label text-wrap
-          style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
-          WELCOME TO FORWARD ASSIST
-        </ion-label>
-      </ion-button>
-    </ion-card>
-    <ion-card style="height:14%">
-      <ion-button fill="clear" style="width:100%;height:100%" routerLink="/about" routerDirection="root">
-        
-          <img src="..//../assets/images/whoAreWe.png" style="height:60%"> &nbsp;&nbsp; &nbsp;&nbsp;  
+<ion-content [fullscreen]="true" style="height: 100%">
+  <div
+    id="container"
+    style="height: 100%; padding-bottom: 15%; overflow-y: scroll"
+  >
+    <div
+      style="text-align: center; height: 22%"
+      class="imagebackground responsive"
+    ></div>
+    <div style="margin: auto; width: 90%">
+      <ion-button
+        routerLink="/introduction"
+        routerDirection="root"
+        expand="block"
+        class="gradient1 home-button"
+        size="large"
+      >
+        <div class="home-flex">
           <ion-label
-            style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
-            WHO WE ARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;    &nbsp;       
+            text-wrap
+            style="
+              font-size: x-large;
+              color: white;
+              width: 60%;
+              text-align: left;
+            "
+            class="home-label"
+          >
+            Welcome to Forward Assist
           </ion-label>
-     
-   
+          <img
+            src="..//../assets/images/Forward_assit_logo.png"
+            style="height: 80%"
+          />
+        </div>
       </ion-button>
-    </ion-card>
-    <ion-card style="height:14%">
-      <ion-button fill="clear" style="width:100%;height:100%" routerLink="/instructions" routerDirection="root">
-        <img src="..//../assets/images/instruction.jpg" style="height:60%"> &nbsp;&nbsp;
-        <ion-label text-wrap
-          style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
-          INSTRUCTIONS     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;      
-        </ion-label>
+      <ion-button
+        routerLink="/introduction"
+        routerDirection="root"
+        expand="block"
+        class="gradient2 home-button"
+        size="large"
+      >
+        <div class="home-flex">
+          <ion-label
+            text-wrap
+            style="
+              font-size: x-large;
+              color: white;
+              width: 60%;
+              text-align: left;
+            "
+            class="home-label"
+          >
+            Who we are
+          </ion-label>
+          <img src="..//../assets/images/confusion-w.png" style="height: 60%" />
+        </div>
       </ion-button>
-    </ion-card>
-    <ion-card style="height:14%;">
-      <a
+      <ion-button
+        routerLink="/introduction"
+        routerDirection="root"
+        expand="block"
+        class="gradient1 home-button"
+        size="large"
+      >
+        <div class="home-flex">
+          <ion-label
+            text-wrap
+            style="
+              font-size: x-large;
+              color: white;
+              width: 60%;
+              text-align: left;
+            "
+            class="home-label"
+          >
+            Instructions
+          </ion-label>
+          <img src="..//../assets/images/info-w.png" style="height: 60%" />
+        </div>
+      </ion-button>
+      <ion-button
+        expand="block"
+        class="gradient2 home-button"
         href="mailto:?subject=Forward%20Assist%20Referral&body=This%20is%20placeholder%20text%20to%20refer%20a%20friend%20to%20Forward%20Assist
-        https://play.google.com/store/apps/details?id=is.vertical.ptsdcoach&gl=GB">
-        <ion-button fill="clear" style="width:100%;height:100%">
-
-          <img src="..//../assets/images/referral.png" style="height:60%">
-          <ion-label text-wrap
-            style="font-weight: bold;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: goldenrod;">
-            MAKE A REFERRAL        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        https://play.google.com/store/apps/details?id=is.vertical.ptsdcoach&gl=GB"
+        size="large"
+      >
+        <div class="home-flex">
+          <ion-label
+            text-wrap
+            style="
+              font-size: x-large;
+              color: white;
+              width: 60%;
+              text-align: left;
+            "
+            class="home-label"
+          >
+            Make a referral
           </ion-label>
-        </ion-button>
-      </a>
-    </ion-card>
+          <svg
+            fill="#ffffff"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 30 30"
+            width="60px"
+            height="60px"
+          >
+            <path
+              d="M 24 3 A 3 3 0 0 0 21 6 A 3 3 0 0 0 21.375 7.4472656 L 15.550781 14 L 8.8261719 14 A 3 3 0 0 0 6 12 A 3 3 0 0 0 3 15 A 3 3 0 0 0 6 18 A 3 3 0 0 0 8.8242188 16 L 15.550781 16 L 21.373047 22.550781 A 3 3 0 0 0 21 24 A 3 3 0 0 0 24 27 A 3 3 0 0 0 27 24 A 3 3 0 0 0 24 21 A 3 3 0 0 0 22.869141 21.222656 L 17.337891 15 L 22.869141 8.7773438 A 3 3 0 0 0 24 9 A 3 3 0 0 0 27 6 A 3 3 0 0 0 24 3 z"
+            />
+          </svg>
+        </div>
+      </ion-button>
+    </div>
   </div>
 </ion-content>
