@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -25,7 +25,28 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 #bottom {
-    bottom: 0px;
-    left: 0px;
-    position: absolute;
-    width: 100%;}
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.gradient1 {
+  --background: radial-gradient(
+    circle farthest-side at 90% -100%,
+    #daa520,
+    #a4b257
+  );
+}
+
+.gradient2 {
+  --background: radial-gradient(
+    circle farthest-side at 20% -50%,
+    #daa520,
+    #a4b257
+  );
+}
