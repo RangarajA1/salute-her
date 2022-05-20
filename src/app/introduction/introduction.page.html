@@ -1,23 +1,36 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Introduction</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
   
-  <div style="margin:10%">
-     <h4>WELCOME TO FORWARD ASSIST</h4>
-       <p>
-        “We support military veterans struggling to adjust to civilian life; 
-        we want  all veterans to  live  great lives, filled with passion, purpose, service, connection and growth”. 
-        For some veterans a return to civilian life can be a joyous experience, 
-        However for others it can be an experience fraught with transitional difficulties that are multiple and complex in nature. 
-        We aim to provide a safe place where traumatised veterans can feel physically and psychologically supported, respected and welcome.
-      </p>
+  <div id="introduction-container" style="background: white;height: 100%;">
+    <ion-card style="text-align:center;">
+      <ion-card-header class="gradient1">
+        <ion-card-title text-wrap style="
+          font-size: x-large;
+          color: white;
+          
+          text-align: center;
+        ">
+          Introduction</ion-card-title>
+      </ion-card-header>
+    </ion-card>
 
-    <ion-button fill="clear"  (click)="initModal()">read more...</ion-button>
-
-    <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
+    <ion-card  slot="content" style="text-align: left;height:100%">
+      <div style="margin:8%;text-align: justify;font-size:large;font-family: system-ui;">
+        <h4>WELCOME TO FORWARD ASSIST</h4>
+        <p>
+          “We support military veterans struggling to adjust to civilian life; 
+          we want  all veterans to  live  great lives, filled with passion, purpose, service, connection and growth”. 
+          For some veterans a return to civilian life can be a joyous experience, 
+          However for others it can be an experience fraught with transitional difficulties that are multiple and complex in nature. 
+          We aim to provide a safe place where traumatised veterans can feel physically and psychologically supported, respected and welcome.
+        </p>
+   
+      <ion-button fill="clear"  (click)="initModal()">read more...</ion-button>
+   
+      <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
+      </div>
+  
+  
+    </ion-card>
+    
   </div>
 </ion-content>
