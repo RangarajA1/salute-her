@@ -50,3 +50,34 @@ html {
     #dbdab4
   );
 }
+
+@media (min-aspect-ratio: 40/100) {
+  ion-card.padding {
+    padding-bottom: 220%
+  }
+}
+@media (min-aspect-ratio: 41/92) {
+  ion-card.padding {
+    padding-bottom: 190%
+  }
+}
+@media (min-aspect-ratio: 360/740) {
+  ion-card.padding {
+    padding-bottom: 230%
+  }
+}
+@media (min-aspect-ratio: 80/120) {
+  ion-card.padding {
+    padding-bottom: 0%
+  }
+}
+@media (min-aspect-ratio: 5/3) {
+  ion-card.padding {
+    padding-bottom: 220%
+  }
+}
+@media (min-aspect-ratio: 140/100) {
+  ion-card.padding {
+    padding-bottom: 10%
+  }
+}

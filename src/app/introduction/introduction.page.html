@@ -1,32 +1,42 @@
-<ion-content>
+<ion-content [fullscreen]="true" style="height: 100%">
   
   <div id="introduction-container" style="background: white;height: 100%;">
     <ion-card style="text-align:center;">
       <ion-card-header class="gradient1">
         <ion-card-title text-wrap style="
           font-size: x-large;
-          color: white;
-          
-          text-align: center;
-        ">
-          Introduction</ion-card-title>
+          color: #16486f;
+          font-weight: normal;
+          font-family: alternate-gothic-no-3-d;
+          text-align: center;">
+          Introduction to Salute HER</ion-card-title>
       </ion-card-header>
     </ion-card>
 
-    <ion-card  slot="content" style="text-align: left;height:100%">
-      <div style="margin:8%;text-align: justify;font-size:large;font-family: system-ui;">
-        <h4>WELCOME TO FORWARD ASSIST</h4>
-        <p>
-          “We support military veterans struggling to adjust to civilian life; 
-          we want  all veterans to  live  great lives, filled with passion, purpose, service, connection and growth”. 
-          For some veterans a return to civilian life can be a joyous experience, 
-          However for others it can be an experience fraught with transitional difficulties that are multiple and complex in nature. 
-          We aim to provide a safe place where traumatised veterans can feel physically and psychologically supported, respected and welcome.
+    <ion-card  class="padding" slot="content" style="text-align: left;height:100%;">
+      <div style="margin:8%;text-align: justify;font-size:large;font-family: alternate-gothic-no-3-d;">
+        <ion-label style="color: #16486f;font-family: alternate-gothic-no-3-d"> WELCOME TO FORWARD ASSIST- SALUTE HER</ion-label>
+        
+        <p style="font-family: alternate-gothic-no-3-d;">
+          <b>Empowering Women Veterans</b> <br>
+          Forward Assist recognise that women veterans are a hidden, marginalised and frequently ignored and forgotten population. 
+          We prefer to use the term ‘Woman Veteran’ over ‘Female Veteran’…Why? 
+          Well, its all about respect, because the word 'female' has biological overtones and 
+          focusses too narrowly on the reproductive system which can be linked to any female animal whilst the word 'women' describes a human. 
+          We are actively campaigning for gender specific mental health support services for women who were harassed and sexually abused during military service. 
+          Salute Her aim to ensure  that all ‘Women Veterans’ have a choice in both service design and delivery.
+          Team Salute Her are the only UK ‘gender specific’ support service, to offer tri-service, trauma informed, 
+          mental health therapy and interventions for survivors of in-service sexual abuse. 
+          We also provide needs led  wrap around holistic care to women service personnel and veterans in a single sex environment.
         </p>
+
+        <a target="_blank" href="https://www.forward-assist.com/salute-her">read more</a>
+
+        
+       
+   <!--   <ion-button fill="clear"  (click)="initModal()">read more...</ion-button>
    
-      <ion-button fill="clear"  (click)="initModal()">read more...</ion-button>
-   
-      <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
+      <p *ngIf="modalDataResponse">{{modalDataResponse}}</p> --> 
       </div>
   
   
