@@ -38,8 +38,8 @@ html {
 .gradient1 {
   --background: radial-gradient(
     circle farthest-side at 90% -100%,
-    #646738,
-    #bbbe8b
+    #209956,
+    #c9e9d6
   );
 }
 
@@ -49,6 +49,10 @@ html {
     #908c2c,
     #dbdab4
   );
+}
+.textstyle{
+  color: #5c4188;
+  text-align: left;
 }
 
 @media (min-aspect-ratio: 40/100) {

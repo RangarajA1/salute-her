@@ -27,10 +27,11 @@
 div.imagebackground {
   text-align: center;
   height: 100%;
-  background-image: url(../../assets/images/HomeTitle_alt.jpg);
-  width: 100%;
+  background-image: url(../../assets/images/home.jpg);
+  width: 90%;
   background-repeat: no-repeat, no-repeat;
   background-position: center;
+  margin-left:5%
 }
 
 @media (min-aspect-ratio: 40/100) {

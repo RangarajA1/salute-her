@@ -16,10 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./myth-buster/myth-buster.module').then( m => m.MythBusterPageModule)
   },
   {
-    path: 'best-practice',
-    loadChildren: () => import('./best-practice/best-practice.module').then( m => m.BestPracticePageModule)
-  },
-  {
     path: 'about',
     loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
@@ -34,6 +30,14 @@ const routes: Routes = [
   {
     path: 'introduction',
     loadChildren: () => import('./introduction/introduction.module').then( m => m.IntroductionPageModule)
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then( m => m.BlogPageModule)
+  },
+  {
+    path: 'benefits',
+    loadChildren: () => import('./benefits/benefits.module').then( m => m.BenefitsPageModule)
   },
 ];
 

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BestPracticePageRoutingModule } from './best-practice-routing.module';
+import { BlogPageRoutingModule } from './blog-routing.module';
 
-import { BestPracticePage } from './best-practice.page';
+import { BlogPage } from './blog.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BestPracticePageRoutingModule
+    BlogPageRoutingModule
   ],
-  declarations: [BestPracticePage]
+  declarations: [BlogPage]
 })
-export class BestPracticePageModule {}
+export class BlogPageModule {}
