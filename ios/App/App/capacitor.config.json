@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "forward-assist",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
