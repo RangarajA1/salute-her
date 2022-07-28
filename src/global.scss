@@ -57,7 +57,12 @@ html {
 }
 
 .boldstyle{
-color: #209956
+color: #209956;
+font-weight: bold;
+}
+.card{
+  margin-left:8%;
+  margin-right:8%;
 }
 
 @media (min-aspect-ratio: 40/100) {
